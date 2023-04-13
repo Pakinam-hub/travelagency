@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Agency Homepage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+		.hero {
+			background-image: url('https://static.vecteezy.com/system/resources/previews/006/862/352/original/illustration-of-travel-using-as-business-web-template-agency-free-vector.jpg');
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+            text-shadow: 2px 2px 2px black;
+			padding: 100px 20px;
+			text-align: center;
+		}
+		
+		.hero h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+		
+		.hero p {
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+		
+		.cta-btn {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 18px;
+			transition: all 0.3s ease-in-out;
+		}
+		
+		.cta-btn:hover {
+			background-color: #0056b3;
+            color: #fff;
+
+			cursor: pointer;
+		}
+		
+		.testimonials {
+			margin-bottom: 40px;
+		}
+		
+		.testimonials h2 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.testimonial-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		
+		.testimonial {
+			background-color: #f5f5f5;
+			padding: 20px;
+			border-radius: 5px;
+			flex: 1 1 300px;
+			margin: 0 10px 20px 0;
+			text-align: center;
+		}
+		
+		.testimonial p:first-of-type {
+			font-style: italic;
+			margin-bottom: 10px;
+		}
+		
+		.testimonial p:last-of-type {
+			font-weight: bold;
+		}
+		
+		.featured-packages {
+			margin-bottom: 40px;
+		}
+		
+		.featured-packages h2 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.package-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		
+		.package {
+			background-color: #f5f5f5;
+			padding: 20px;
+			border-radius: 5px;
+			flex: 1 1 300px;
+			margin: 0 10px 20px 0;
+			text-align: center;
+		}
+		
+		.package h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		.package p {
+			margin-bottom: 20px;
+		}
+		
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			
+			<a class="navbar-brand" href="index.html">Travel Agency</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="destinations.html">Destinations</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="packages.html">Packages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero">
+		<div class="container">
+			<h1>Your Adventure Awaits</h1>
+			<p>Book your dream vacation today</p>
+			<a href="destinations.html" class="cta-btn">Explore Destinations</a>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="container">
+			<h2>What Our Customers Are Saying</h2>
+			<div class="testimonial-container">
+				<div class="testimonial">
+					<p>"The best travel agency I've ever used! Their customer service is top-notch and they made my dream vacation a reality."</p>
+					<p>- John Smith</p>
+				</div>
+				<div class="testimonial">
+					<p>"I've used this travel agency for several trips and they never disappoint. Their attention to detail is unmatched."</p>
+					<p>- Jane Doe</p>
+				</div>
+				<div class="testimonial">
+					<p>"I was hesitant to book a vacation during the pandemic, but this agency made sure everything was safe. I had a wonderful trip!"</p>
+					<p>- Tom Johnson</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="featured-packages">
+		<div class="container">
+			<h2>Featured Packages</h2>
+			<div class="package-container">
+				<div class="package">
+					<h3>Beach Getaway</h3>
+					<p>Escape to the sun and sand with our Beach Getaway package. Includes airfare, hotel, and airport transfers.</p>
+					<a href="#" class="cta-btn">Book Now</a>
+				</div>
+				<div class="package">
+					<h3>City Adventure</h3>
+					<p>Explore the sights and sounds of a new city with our City Adventure package. Includes airfare, hotel, and guided tours.</p>
+					<a href="#" class="cta-btn">Book Now</a>
+				</div>
+				<div class="package">
+					<h3>Mountain Retreat</h3>
+					<p>Get away from it all and relax in the mountains with our Mountain Retreat package. Includes cabin rental.</p>
+                        <a href="#" class="cta-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum lacus ac erat imperdiet, in rhoncus magna posuere. Phasellus euismod neque vel aliquet sagittis. Sed ultricies euismod sapien in dapibus.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> 123 Main St, Anytown USA</li>
+                            <li><i class="fa fa-phone"></i> 555-555-1234</li>
+                            <li><i class="fa fa-envelope"></i> info@travelagency.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy; 2023 Travel Agency. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
